@@ -1,0 +1,7 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.icont {
+    @apply flex items-center justify-center size-6 text-xl p-4 bg-white rounded-md border
+}
