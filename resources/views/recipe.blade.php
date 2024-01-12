@@ -1,4 +1,4 @@
-@extends('layout.app')
+@extends('layout.app', ["title" => "HomePage"])
 @section('content')
     @php
         $api = $recipeData['recipes'];

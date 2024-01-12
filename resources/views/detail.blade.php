@@ -1,4 +1,4 @@
-@extends('layout.app')
+@extends('layout.app', ['title' => $recipeData['name']])
 @section('content')
     <div>
         @php
