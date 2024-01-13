@@ -17,7 +17,7 @@ class RecipeController extends Controller
             $data = json_decode($response->getBody(), true);
             return view('recipe', ['recipeData' => $data]);
         } catch (\Exception $e) {
-            return view('api_error', ['error' => $e->getMessage()]);
+            return abort(404);
         }
     }
 
@@ -31,7 +31,7 @@ class RecipeController extends Controller
             $data = json_decode($response->getBody(), true);
             return view('detail', ['recipeData' => $data]);
         } catch (\Exception $e) {
-            return view('api_error', ['error' => $e->getMessage()]);
+            return abort(404);
         }
     }
 }
